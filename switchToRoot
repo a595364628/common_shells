@@ -1,0 +1,8 @@
+#！/usr/bin/expect
+
+set timeout 100
+set password "4042"
+spawn su - root
+expect "Password:"
+send "$password\n"
+interact
